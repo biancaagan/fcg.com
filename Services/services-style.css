@@ -1,0 +1,159 @@
+/* ------------------- ALL PAGE STYLING, HEADER, AND FOOTER ------------------- */
+
+@font-face { /* https://github.com/garrettboatman/ForTheWolf/blob/master/fonts/Futura-Medium.woff */
+    font-family: Futura;
+    src: url('/Futura-Medium.woff') format("WOFF");
+    font-weight: normal;
+  }
+  
+  @font-face { 
+    font-family: Futura-Book;
+    src: url('/Futura-Book.woff') format("WOFF");
+    font-weight: normal;
+  }
+  
+  @font-face { 
+    font-family: Consolas;
+    src: url('/Consolas.woff') format("WOFF");
+    font-weight: normal;
+  }
+  
+  *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+  }
+  
+  header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0.5rem 1.5rem;
+    background-color: #fff;
+    border-style: dotted;
+  }
+  
+  body{
+    border-style: dotted;
+  }
+  
+  main{
+    border-style: dotted;
+  }
+  
+  /* ------------------- NAVIGATION BAR ------------------- */
+  .logo-clickable{
+    width: 200px;
+    margin-right: auto;
+    margin-left: 150px;
+    background-color: #fff;
+    border-style: dotted;
+  }
+  
+  .logo{
+    border-style: dotted;
+    border-color: black;
+    /* margin-right: 500px; */
+  }
+  
+  /* .nav-bar{
+    border: 2px;
+    border-color: #000;
+  } */
+  
+  .nav-links{
+    /* list-style: none; */
+    list-style-type: none;
+    margin: 0px 150px 0px 0px;
+    padding: 0;
+    text-align: center;
+    overflow: hidden;
+    background-color: #c1c1c1;
+    border-style: dotted;
+  }
+  
+  .nav-links li{
+    display: inline;
+    list-style-type: none;
+    float: left;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: Consolas;
+    font-size: 20px;
+  }
+  
+  .nav-links li a{
+    display: inline-block;
+    color: #000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: all 0.5s ease 0s;
+  }
+  
+  nav li + li:before{
+    content: " |";
+    padding: 0 1px;
+  }
+  
+  li a:hover{
+    background-color: #cccccc;
+    border-radius: 10px;
+  }
+  
+  /* FOOTER */
+  footer {
+    border-style: dotted;
+    text-align: center;
+    margin: 50px;
+    padding: 10px;
+    background-color: white;
+  
+  }
+  
+  .footer-title {
+    font-family: Consolas;
+    font-size: 18px;
+    /* margin: 45px, 25px, 10px, 25px; */
+  }
+  /* --------------------------------------------------------- */
+  
+  
+  .page-header{
+    /* border-style: dotted; */
+    border-radius: 20px;
+    text-align: center;
+    width: fit-content;
+    margin: 20px auto 10px auto;
+  }
+  
+  #page-title {
+    /* border-style: dotted; */
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */
+    font-family: Consolas;
+    width: fit-content;
+    font-size: 65px;
+    margin: 30px auto auto auto;
+    padding: 20px;
+  }
+  
+  #page-subtitle {
+    /* border-style: dotted; */
+    color: #81BB4E;
+    width: fit-content;
+    margin: 10px auto auto auto;
+    padding: 20px;
+    font-family: Futura-Book;
+    font-size: 50px;
+  }
+  
+  #page-desc {
+    /* border-style: dotted; */
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */
+    font-family: Consolas;
+    font-size: 20px;
+    word-wrap: break-word;
+    width: 1200px;
+    margin: 10px auto auto auto;
+    padding: 20px;
+  }
