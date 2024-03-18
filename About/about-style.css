@@ -1,3 +1,5 @@
+/* ------------------- ALL PAGE STYLING, HEADER, AND FOOTER ------------------- */
+
 @font-face { /* https://github.com/garrettboatman/ForTheWolf/blob/master/fonts/Futura-Medium.woff */
   font-family: Futura;
   src: url('/Futura-Medium.woff') format("WOFF");
@@ -17,30 +19,30 @@
 }
 
 *{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    background-color: #ffffff;
-  }
-  
-  header{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    margin: 0.5rem 1.5rem;
-    background-color: #fff;
-    border-style: dotted;
-  }
-  
-  body{
-    border-style: dotted;
-  }
-  
-  main{
-    border-style: dotted;
-  }
-  
-  /* ------------------- Navigation Bar ------------------- */
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+}
+
+header{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0.5rem 1.5rem;
+  background-color: #fff;
+  border-style: dotted;
+}
+
+body{
+  border-style: dotted;
+}
+
+main{
+  border-style: dotted;
+}
+
+/* ------------------- NAVIGATION BAR ------------------- */
 .logo-clickable{
   width: 200px;
   margin-right: auto;
@@ -97,6 +99,22 @@ nav li + li:before{
 li a:hover{
   background-color: #cccccc;
   border-radius: 10px;
+}
+
+/* FOOTER */
+footer {
+  border-style: dotted;
+  text-align: center;
+  margin: 50px;
+  padding: 10px;
+  background-color: white;
+
+}
+
+.footer-title {
+  font-family: Consolas;
+  font-size: 18px;
+  /* margin: 45px, 25px, 10px, 25px; */
 }
 /* --------------------------------------------------------- */
   
