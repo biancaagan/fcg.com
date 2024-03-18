@@ -1,0 +1,163 @@
+<html>
+
+<head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="rf_form_style.css">
+
+        <title>FCG</title>
+</head>
+
+<body>
+        <header>
+                <div class="logo-clickable">
+                        <a href="index.html">
+                                <img  class="logo" src="FCG Logo 1.png" width="300px">
+                        </a>
+                </div>
+
+                <!-- <div class="nav-bar"> -->
+                <nav class="nav-links">
+                        <ul>
+                                <li class="nav-item"><a href="#home">Home</a></li>
+                                <li class="nav-item"><a href="#about">About</a></li>
+                                <li class="nav-item"><a href="#requests">RF Requests</a></li>
+                                <li class="nav-item"><a href="#services">Services</a></li>
+                                <li class="nav-item"><a href="#contact">Contact</a></li>
+                        </ul>
+                </nav>
+                <!-- </div> -->
+        </header>
+
+        <main>
+                <div class="rf-form">
+                    
+                        <div class="rf-form-heading">
+                            <h1 class="form-title">Frequency Coordination Requests</h1><br>
+                            <h3 class="form-subtitle">WWWY 2023</h3><br>
+                            <p class="form-text">FCG is proud to provide frequency coordination for WWWY 2023.<br>
+                                Please submit your coordination requests below.</p><br>
+                        </div>
+
+                        <!-- <h3 class="form-section">Contact Information</h3> -->
+
+                        <div class="rf-form">
+
+                            <!-- Contact Information -->
+                            <h3 class="form-section-title">Contact Information</h3>
+                            <div class="form-section">
+                                <!-- <h3 class="form-section-title">Contact Information</h3> -->
+
+                                    <div class="required-field" class="form-item">
+                                        Who is this request for?<br>
+                                        &#40;Band / Artist / Vendor / Media Outlet / etc.&#41;
+                                        <input type="text" name="entity" required><br>
+                                    </div>
+                                    
+                                    <div class="required-field" class="form-item">Contact name: <br>
+                                        <input type="text" name="contact-name" required><br>
+                                    </div>
+                                    <!-- <input type="text" name="contact-name" required><br> -->
+    
+                                    <div class="required-field" class="form-item">Contact email: <br>
+                                        <input type="text" name="contact-email" required><br>
+                                    </div>
+                                    <!-- <input type="text" name="contact-email" required><br> -->
+    
+                                    <div class="required-field" class="form-item">Contact phone: <br>
+                                        <input type="text" name="contact-phone" required><br>
+                                    </div>
+                                    <!-- <input type="text" name="contact-phone" required><br> -->
+                            </div>
+
+                            
+
+                            <!-- General Information -->
+                            <h3 class="form-section-title">General Information</h3>
+
+                            <div class="form-section">
+                                <div class="required-field">
+                                    Dates of use:<br>
+                                    &#40;select more than one by holding control or command&#41;
+                                </div>
+                                <select name="dates" multiple>
+                                    <option value="date-1">October 20 &#40;early load-in&#41;</option>
+                                    <option value="date-2">October 21</option>
+                                    <option value="date-3">October 22</option>
+                                </select>
+                            </div>
+
+                            <div class="form-section">
+                                <div class="required-field">
+                                    Stage / location:<br>
+                                    &#40;select more than one by holding control or command&#41;
+                                </div>
+                                <select name="location" size='8' multiple>
+                                    <option value="location-1">Green Stage</option>
+                                    <option value="location-2">Pink Stage</option>
+                                    <option value="location-3">Ghost Stage</option>
+                                    <option value="location-4">Stripe Stage</option>
+                                    <option value="location-5">Media / roaming</option>
+                                    <option value="location-6">Other &#40;specify below&#41;</option>
+                                </select>
+                                <br>
+                                <input type="text" name="other-location" placeholder="Other">
+                            </div>
+
+                            <!-- RF Information -->
+                            <h3 class="form-section-title">Wireless Devices</h3>
+
+                            <div class="form-section">
+                                <div class="required-field">
+                                    Will you be using any wireless devices?<br>
+                                    &#40;microphones / IEMs / backline / intercom / etc.&#41;
+                                </div>
+                                
+                                <div class="form-subsection">
+                                    <label class="container">Yes - my RF equipment ONLY.
+                                        <input type="radio" checked="checked" name="radio">
+                                        <span class="checkmark"></span>
+                                      </label>
+                                      <label class="container">Yes - stage provided RF equipment ONLY.
+                                        <input type="radio" name="radio">
+                                        <span class="checkmark"></span>
+                                      </label>
+                                      <label class="container">Yes - my RF equipment WITH stage provided RF equipment.
+                                        <input type="radio" name="radio">
+                                        <span class="checkmark"></span>
+                                      </label>
+                                      <label class="container">No - we will not be using any RF equipment.
+                                        <input type="radio" name="radio">
+                                        <span class="checkmark"></span>
+                                      </label>
+
+                                    <!-- <input type="radio" id="yes-only-own" name="wireless-use" value="yes-only-own">
+                                    <label for="yes-own">Yes - my RF equipment ONLY.</label>
+                                    <br>
+                                    <input type="radio" id="yes-stage" name="wireless-use" value="yes-stage">
+                                    <label for="yes-stage">Yes - stage provided RF equipment ONLY.</label>
+                                    <br>
+                                    <input type="radio" id="yes-own-stage" name="wireless-use" value="yes-own-stage">
+                                    <label for="yes-own-stage">Yes - my RF equipment WITH stage provided RF equipment.</label>
+                                    <br>
+                                    <input type="radio" id="no" name="wireless-use" value="no">
+                                    <label for="no">No - we will not be using any RF equipment.</label>
+                                    <br> -->
+                                </div>
+
+                            </div>
+                            
+                        </div>
+
+                        <button class="submit-button">Submit</button>
+                        
+                </div>
+                
+        </main>
+
+
+</body>
+
+
+
+
+</html>
