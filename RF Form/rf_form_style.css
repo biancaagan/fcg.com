@@ -51,63 +51,64 @@
 
   
   /* ------------------- Navigation Bar ------------------- */
-  .logo-clickable{
-    width: 200px;
-    margin-right: auto;
-    margin-left: 150px;
-    background-color: #fff;
-    border-style: dotted;
-  }
-  
-  .logo{
-    border-style: dotted;
-    border-color: black;
-    /* margin-right: 500px; */
-  }
-  
-  /* .nav-bar{
-    border: 2px;
-    border-color: #000;
-  } */
-  
-  .nav-links{
-    /* list-style: none; */
-    list-style-type: none;
-    margin: 0px 150px 0px 0px;
-    padding: 0;
-    text-align: center;
-    overflow: hidden;
-    background-color: #c1c1c1;
-    border-style: dotted;
-  }
-  
-  .nav-links li{
-    display: inline;
-    list-style-type: none;
-    float: left;
-    /* font-family: Arial, Helvetica, sans-serif; */
-    font-family: Consolas;
-    font-size: 25px;
-  }
-  
-  .nav-links li a{
-    display: inline-block;
-    color: #000;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    transition: all 0.5s ease 0s;
-  }
+.logo-clickable{
+  width: 200px;
+  margin-right: auto;
+  margin-left: 150px;
+  background-color: #fff;
+  border-style: dotted;
+}
 
-  nav li + li:before{
-    content: " |";
-    padding: 0 1px;
-  }
-  
-  li a:hover{
-    background-color: #cccccc;
-    border-radius: 10px;  }
-  /* --------------------------------------------------------- */
+.logo{
+  border-style: dotted;
+  border-color: black;
+  /* margin-right: 500px; */
+}
+
+/* .nav-bar{
+  border: 2px;
+  border-color: #000;
+} */
+
+.nav-links{
+  /* list-style: none; */
+  list-style-type: none;
+  margin: 0px 150px 0px 0px;
+  padding: 0;
+  text-align: center;
+  overflow: hidden;
+  background-color: #c1c1c1;
+  border-style: dotted;
+}
+
+.nav-links li{
+  display: inline;
+  list-style-type: none;
+  float: left;
+  /* font-family: Arial, Helvetica, sans-serif; */
+  font-family: Consolas;
+  font-size: 20px;
+}
+
+.nav-links li a{
+  display: inline-block;
+  color: #000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: all 0.5s ease 0s;
+}
+
+nav li + li:before{
+  content: " |";
+  padding: 0 1px;
+}
+
+li a:hover{
+  background-color: #cccccc;
+  border-radius: 10px;
+}
+/* --------------------------------------------------------- */
   
 .form-header {
     border-style: dotted;
