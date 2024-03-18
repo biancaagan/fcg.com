@@ -26,20 +26,29 @@
   }
   
   header{
+    position: static;
+    padding: 10px 10px 0px 10px;
+    top: 0;
+    width: 100%;
+    text-align: center;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    margin: 0.5rem 1.5rem;
+    /* margin: 0.5rem 1.5rem; */
+    padding-bottom: 5px;
     background-color: #fff;
-    border-style: dotted;
+    border-bottom: 1px solid black;
+    /* border-style: dotted; */
   }
   
   body{
-    border-style: dotted;
+    /* border-style: dotted; */
+    border-style: none;
   }
   
   main{
-    border-style: dotted;
+    /* border-style: dotted; */
+    border-style: none;
   }
   
   /* ------------------- NAVIGATION BAR ------------------- */
@@ -48,11 +57,11 @@
     margin-right: auto;
     margin-left: 150px;
     background-color: #fff;
-    border-style: dotted;
+    /* border-style: dotted; */
   }
   
   .logo{
-    border-style: dotted;
+    /* border-style: dotted; */
     border-color: black;
     /* margin-right: 500px; */
   }
@@ -70,7 +79,7 @@
     text-align: center;
     overflow: hidden;
     background-color: #c1c1c1;
-    border-style: dotted;
+    /* border-style: dotted; */
   }
   
   .nav-links li{
@@ -103,17 +112,23 @@
   
   /* FOOTER */
   footer {
-    border-style: dotted;
+    /* border-style: dotted; */
+    position: fixed;
+    padding: 10px 10px 0px 10px;
+    bottom: 0;
+    width: 100%;
     text-align: center;
-    margin: 50px;
-    padding: 10px;
+    /* margin: 50px; */
+    padding: 30px;
     background-color: white;
+    border-top: 1px solid black;
   
   }
   
   .footer-title {
     font-family: Consolas;
     font-size: 18px;
+    /* padding: 10px; */
     /* margin: 45px, 25px, 10px, 25px; */
   }
   /* --------------------------------------------------------- */
