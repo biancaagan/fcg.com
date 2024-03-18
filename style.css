@@ -157,4 +157,11 @@ li a:hover{
 }
 
 
+footer {
+  text-align: center;
+  margin: 20px;
+  padding: 10px;
+  background-color: white;
+  font-family: Consolas;
+}
 
