@@ -132,8 +132,8 @@ li a:hover{
 }
 
 #about-subtitle {
-  border-style: dotted;
-  border-radius: 20px;
+  /* border-style: dotted;
+  border-radius: 20px; */
   color: #81BB4E;
   width: fit-content;
   margin: 10px auto auto auto;
