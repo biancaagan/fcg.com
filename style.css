@@ -158,8 +158,9 @@ li a:hover{
 
 
 footer {
+  border-style: dotted;
   text-align: center;
-  margin: 20px;
+  margin: 50px, 25px, 10px, 25px;
   padding: 10px;
   background-color: white;
   font-family: Consolas;
