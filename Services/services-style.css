@@ -157,3 +157,20 @@
     margin: 10px auto auto auto;
     padding: 20px;
   }
+
+  .contact-button {
+    background-color: #81BB4E;
+    border: none;
+    border-radius: 15px;
+    color: #fff;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 35px auto auto auto;
+  }
+  
+  .contact-button:hover {
+    box-shadow: 0 5px 16px 0 rgba(0,0,0,0.24),0 17px 25px 0 rgba(0,0,0,0.19);
+  }

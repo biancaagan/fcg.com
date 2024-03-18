@@ -31,15 +31,17 @@ header{
   align-items: center;
   margin: 0.5rem 1.5rem;
   background-color: #fff;
-  border-style: dotted;
+  /* border-style: dotted; */
 }
 
 body{
-  border-style: dotted;
+  /* border-style: dotted; */
+  border-style: none;
 }
 
 main{
-  border-style: dotted;
+  /* border-style: dotted; */
+  border-style: none;
 }
 
 /* ------------------- NAVIGATION BAR ------------------- */
@@ -48,11 +50,11 @@ main{
   margin-right: auto;
   margin-left: 150px;
   background-color: #fff;
-  border-style: dotted;
+  /* border-style: dotted; */
 }
 
 .logo{
-  border-style: dotted;
+  /* border-style: dotted; */
   border-color: black;
   /* margin-right: 500px; */
 }
@@ -70,7 +72,7 @@ main{
   text-align: center;
   overflow: hidden;
   background-color: #c1c1c1;
-  border-style: dotted;
+  /* border-style: dotted; */
 }
 
 .nav-links li{
@@ -103,7 +105,7 @@ li a:hover{
 
 /* FOOTER */
 footer {
-  border-style: dotted;
+  /* border-style: dotted; */
   text-align: center;
   margin: 50px;
   padding: 10px;
