@@ -118,20 +118,8 @@ footer {
 }
 /* --------------------------------------------------------- */
   
-  
-.page-header {
-  border-style: dotted;
-  border-radius: 20px;
-  text-align: center;
-  width: fit-content;
-  margin: 20px auto 10px auto;
-  padding: 25px;
-  /* font-family: Arial, Helvetica, sans-serif; */
-  font-family: Consolas;
-  font-size: 50px;
-}
 
-.about{
+.page-header{
   /* border-style: dotted; */
   border-radius: 20px;
   text-align: center;
@@ -139,7 +127,7 @@ footer {
   margin: 20px auto 10px auto;
 }
 
-#about-title {
+#page-title {
   /* border-style: dotted; */
   /* font-family: Georgia, 'Times New Roman', Times, serif; */
   font-family: Consolas;
@@ -149,7 +137,7 @@ footer {
   padding: 20px;
 }
 
-#about-subtitle {
+#page-subtitle {
   /* border-style: dotted;
   border-radius: 20px; */
   color: #81BB4E;
@@ -160,7 +148,7 @@ footer {
   font-size: 50px;
 }
 
-#about-desc {
+#page-desc {
   /* border-style: dotted; */
   /* font-family: Georgia, 'Times New Roman', Times, serif; */
   font-family: Consolas;

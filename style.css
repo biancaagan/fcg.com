@@ -119,7 +119,7 @@ footer {
 /* --------------------------------------------------------- */
 
 
-.welcome{
+.page-header{
   /* border-style: dotted; */
   border-radius: 20px;
   text-align: center;
@@ -127,7 +127,7 @@ footer {
   margin: 20px auto 10px auto;
 }
 
-#welcome-title {
+#page-title {
   /* border-style: dotted; */
   /* font-family: Georgia, 'Times New Roman', Times, serif; */
   font-family: Consolas;
@@ -137,7 +137,7 @@ footer {
   padding: 20px;
 }
 
-#welcome-subtitle {
+#page-subtitle {
   /* border-style: dotted; */
   color: #81BB4E;
   width: fit-content;
@@ -147,7 +147,7 @@ footer {
   font-size: 50px;
 }
 
-#welcome-desc {
+#page-desc {
   /* border-style: dotted; */
   /* font-family: Georgia, 'Times New Roman', Times, serif; */
   font-family: Consolas;
