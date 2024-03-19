@@ -151,7 +151,7 @@ footer {
 }
 
 .show-logo {
-  width: 500px;
+  width: 350px;
   padding: 20px 0px 45px 0px;
 }
 
@@ -161,7 +161,7 @@ footer {
 }
 
 .form-description {
-    font-size: 36px;
+    font-size: 20px;
 }
 
 .required-field::before{
@@ -179,27 +179,27 @@ footer {
 }
 
 .form-section-title {
-    font-size: 34px;
+    font-size: 20px;
     margin-bottom: 10px;
 }
 
 .form-section-text {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .form-text {
-  font-size: 24px;
+  font-size: 18px;
 }
 
 .form-item {
     padding: 10px 10px 10px 10px;
-    font-size: 24px;
+    font-size: 18px;
 }
 
 .form-question {
   width: fit-content;
   margin: 15px auto 20px 100px;
-  font-size: 24px;
+  font-size: 18px;
 }
 
 .form-subsection {
@@ -216,7 +216,7 @@ input[type=text]{
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
-    font-size: 24px;
+    font-size: 18px;
 }
 
 textarea {
@@ -226,24 +226,24 @@ textarea {
   border-radius: 5px;
   background-color: #f8f8f8;
   padding: 12px 20px;
-  font-size: 24px;
+  font-size: 18px;
 }
 
 input[type=file] {
-  font-size: 24px;
+  font-size: 18px;
 }
 
 select {
   color: gray; 
   /* border-radius: 5%; */
-  font-size: 24px;
+  font-size: 18px;
   display: block;
   width: 100%;
   margin: 10px auto auto auto;
 }
 
 input[type=checkbox] {
-  font-size: 24px;
+  font-size: 18px;
   width: 25px;
   height: 25px;
   margin: 10px auto auto auto;
@@ -258,8 +258,8 @@ input[type=checkbox] {
 }
 
 .device-type {
-  height: 24px;
-  line-height: 24px;
+  height: 18px;
+  line-height: 18px;
 }
 
 fieldset {
@@ -287,7 +287,7 @@ fieldset {
     padding-left: 35px;
     margin-bottom: 12px;
     cursor: pointer;
-    font-size: 22px;
+    font-size: 18px;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -348,7 +348,7 @@ fieldset {
 
   table, th, td {
     /* border: 1px solid black; */
-    font-size: 24px;
+    font-size: 18px;
     margin: auto;
     padding: 0px 10px 0px 10px;
     justify-content: center;
@@ -375,7 +375,7 @@ fieldset {
     padding: 20px;
     text-align: center;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 24px;
     margin: 5px;
     padding: 5px;
     cursor: pointer;
@@ -389,7 +389,7 @@ fieldset {
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 20px;
     cursor: pointer;
     margin: auto;
   }
