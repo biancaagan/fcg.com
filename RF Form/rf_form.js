@@ -32,15 +32,19 @@ function getVals(){
 }
 
 
-var addNum = 1;
+
 var rowCount = 1;
+// var addNum = 1;
 function addRow() { // 24 / 14 / 22 / 18 / 18
     var table = document.getElementById("rf-table");
 
-    rowCount++;
-    addNum++;
+    // rowCount++;
+    // addNum++;
 
-    if (rowCount <= 8) {
+    if(rowCount < 6) {
+        rowCount++;
+        // addNum++;
+        
         var row = table.insertRow(-1);
         var cell1 = row.insertCell(-1);
         var cell2 = row.insertCell(-1);
@@ -53,19 +57,19 @@ function addRow() { // 24 / 14 / 22 / 18 / 18
         cell4.style.width = "18%";
         cell5.style.width = "18%";
 
-        var cell1Text = "<select class='device-type-" + addNum + "' name='dev-" + addNum + "' onchange='getVals()' style='width:fit-content; height:50px; margin-bottom: 8px; color:black;'><option value='' disabled selected>Select device type</option> <option value='mic'>Microphone</option> <option value='iem'>IEM / IFB</option> <option value='inst'>Backline / Instrument</option><option value='intercom'>Intercom</option><option value='hop'>Hop / Link</option> <option value='other'>Other</option></select>";
+        var cell1Text = "<select class='device-type-" + rowCount + "' name='(" + rowCount + ") Device Type' onchange='getVals()' style='width:fit-content; height:50px; margin-bottom: 8px; color:black;'><option value='' disabled selected>Select device type</option> <option value='Microphone'>Microphone</option> <option value='IEM/IFB'>IEM / IFB</option> <option value='Backline/Instrument'>Backline / Instrument</option><option value='Intercom'>Intercom</option><option value='Hop/Link'>Hop / Link</option> <option value='Other'>Other</option></select>";
         cell1.innerHTML += cell1Text
         
-        var cell2Text = "<input type='text' name='dev-" + addNum + "' onchange='getVals()' placeholder='#'>";
+        var cell2Text = "<input type='text' name='(" + rowCount + ") # of Frequencies' onchange='getVals()' placeholder='#'>";
         cell2.innerHTML += cell2Text;
         
-        var cell3Text = "<input type='text' name='dev-" + addNum + "' onchange='getVals()' placeholder='Manufacturer'>";
+        var cell3Text = "<input type='text' name='(" + rowCount + ") Manufacturer' onchange='getVals()' placeholder='Manufacturer'>";
         cell3.innerHTML += cell3Text;
         
-        var cell4Text = "<input type='text' name='dev-" + addNum + "' onchange='getVals()' placeholder='Model'>";
+        var cell4Text = "<input type='text' name='(" + rowCount + ") Model' onchange='getVals()' placeholder='Model'>";
         cell4.innerHTML += cell4Text;
         
-        var cell5Text = "<input type='text' name='dev-" + addNum + "' onchange='getVals()' placeholder='Range'>";
+        var cell5Text = "<input type='text' name='(" + rowCount + ") Frequency Range' onchange='getVals()' placeholder='Range'>";
         cell5.innerHTML += cell5Text;
 
         // cell1.innerHTML = '<select class="device-type" name="Device Type" style="width:fit-content; height:50px; margin-bottom: 8px; color:black;">
@@ -81,23 +85,46 @@ function addRow() { // 24 / 14 / 22 / 18 / 18
         // cell3.innerHTML = '<input type="text" name="dev-" placeholder="Manufacturer">';
         // cell4.innerHTML = '<input type="text" name="dev-" placeholder="Model">';
         // cell5.innerHTML = '<input type="text" name="dev-" placeholder="Range">';
+    }else if(rowCount >= 6){
+        
     }
 }
 
 function deleteRow() {
     var table = document.getElementById("rf-table");
 
-    if(addNum < 0){
-        addNum = 0;
-    }else{
-        addNum--;
-    }
-    if(rowCount < 0){
-        rowCount = 0;
-    }else{
+    if(rowCount < 1){
+        rowCount = 1;
+    }else if(rowCount > 1){
         rowCount--;
+        table.deleteRow(-1);
     }
-    table.deleteRow(-1);
+
+    // if(rowCount < 1){
+    //     rowCount = 1;
+    // }else if(rowCount > 1){
+    //     rowCount--;
+    //     table.deleteRow(-1);
+    // }
+    // if(addNum < 2){
+    //     addNum = 2;
+    // }else if(addNum >= 2){
+    //     addNum--;
+    //     table.deleteRow(-1);
+    // }
+
+
+    // if(addNum < 1){
+    //     addNum = 1;
+    // }else{
+    //     addNum--;
+    // }
+    // if(rowCount < 0){
+    //     rowCount = 0;
+    // }else{
+    //     rowCount--;
+    // }
+    // table.deleteRow(-1);
 }
 
 function test() {

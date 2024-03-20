@@ -277,12 +277,15 @@
                         <div id="device-info" class="form-subsection">
                                 <div class="form-text">
                                         <p>Please specify your own wireless equipment below.</p>
-                                        <!-- <p>Click the "+" button for each additional device.</p> -->
+                                        <p>Click the "+" button for each additional device.</p>
                                 </div>
 
-                                <br>
+                                <!-- <br> -->
                                 <br>
                                 <hr>
+
+                                <button type="button" class="table-button" onclick="addRow(); getVals();">+</button>
+                                <button type="button" class="table-button" onclick="deleteRow(); getVals();">-</button>
 
                                 <table name="rf-table-header" class="rf-table-header">
                                         <thead>
@@ -303,7 +306,7 @@
                                         <!-- DEVICE 1 -->
                                         <tr>
                                                 <td style="width:23%">
-                                                        <select id="device-type-1" class="device-type-1" name="Device 1 Type" onchange="getVals()" style="width:fit-content; height:50px; margin-bottom: 8px; color:black;">
+                                                        <select id="device-type-1" class="device-type-1" name="(1) Device Type" style="width:fit-content; height:50px; margin-bottom: 8px; color:black;">
                                                                 <option value="" disabled selected>Select device type</option>
                                                                 <option value="Microphone">Microphone</option>
                                                                 <option value="IEM/IFB">IEM / IFB</option>
@@ -314,6 +317,18 @@
                                                         </select>
                                                 </td>
                                                 <td style="width:14%">
+                                                        <input type="text" name="(1) # of Frequencies" placeholder="#">
+                                                </td>
+                                                <td style="width:22%">
+                                                        <input type="text" name="(1) Manufacturer" placeholder="Manufacturer">
+                                                </td>
+                                                <td style="width:18%">
+                                                        <input type="text" name="(1) Model" placeholder="Model">
+                                                </td>
+                                                <td style="width:18%">
+                                                        <input type="text" name="(1) Frequency Range" placeholder="Range">
+                                                </td>
+                                                <!-- <td style="width:14%">
                                                         <input type="text" name="dev-1" onchange="getVals()" placeholder="#">
                                                 </td>
                                                 <td style="width:22%">
@@ -324,7 +339,7 @@
                                                 </td>
                                                 <td style="width:18%">
                                                         <input type="text" name="dev-1" onchange="getVals()" placeholder="Range">
-                                                </td>
+                                                </td> -->
                                         </tr>
 
                                 </table>
@@ -334,10 +349,10 @@
                                 <!-- <input name="Devices" id="hidden-dev" type="text" placeholder="Devices"/> -->
 
                                 <hr>
-                                <br>
+                                <!-- <br> -->
 
-                                <button type="button" class="table-button" onclick="addRow(); getVals();">+</button>
-                                <button type="button" class="table-button" onclick="deleteRow(); getVals();">-</button>
+                                <!-- <button type="button" class="table-button" onclick="addRow(); getVals();">+</button>
+                                <button type="button" class="table-button" onclick="deleteRow(); getVals();">-</button> -->
 
                         </div>
                 </div>
@@ -352,7 +367,16 @@
 
                         <br>
 
-                        <textarea id="comment-section" name="comment-section" rows="4" cols="50" placeholder="...?"></textarea>
+                        <textarea id="comment-section" name="comment-section" rows="4" cols="50" onchange="updateComments()" placeholder="...?"></textarea>
+                                                                
+                        <!-- Hidden input value for comment section -->
+                        <input name="Comments" id="hidden-comments" type="text" placeholder="Selected Locations"/>
+
+                        <script>
+                                function updateComments(){
+                                        document.getElementById('hidden-comments').value = document.getElementById("comment-section").value;
+                                }
+                        </script>
                 </div>
 
                 <button class="submit-button center">Submit</button>
