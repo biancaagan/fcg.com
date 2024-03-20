@@ -99,32 +99,6 @@ function deleteRow() {
         rowCount--;
         table.deleteRow(-1);
     }
-
-    // if(rowCount < 1){
-    //     rowCount = 1;
-    // }else if(rowCount > 1){
-    //     rowCount--;
-    //     table.deleteRow(-1);
-    // }
-    // if(addNum < 2){
-    //     addNum = 2;
-    // }else if(addNum >= 2){
-    //     addNum--;
-    //     table.deleteRow(-1);
-    // }
-
-
-    // if(addNum < 1){
-    //     addNum = 1;
-    // }else{
-    //     addNum--;
-    // }
-    // if(rowCount < 0){
-    //     rowCount = 0;
-    // }else{
-    //     rowCount--;
-    // }
-    // table.deleteRow(-1);
 }
 
 function test() {
