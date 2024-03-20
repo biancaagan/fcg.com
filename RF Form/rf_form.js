@@ -107,8 +107,8 @@ function test() {
 // RF table display functions
 function showRFtable() { // https://codepen.io/dhanushbadge/pen/AYRWLW
     // document.getElementById('device-info').style.display = 'block';
-
-    var table = document.getElementById("rf-table");
+    document.getElementById('device-info').style.display = 'block';
+    // var table = document.getElementById("device-info");
     
 
     for(var i = 0; i < 9; i++){

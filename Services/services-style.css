@@ -98,7 +98,7 @@ main{
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  transition: all 0.5s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 
 nav li + li:before{
@@ -112,6 +112,31 @@ li a:hover{
   text-decoration: underline;
   text-decoration-color: #81BB4E;
   border-radius: 10px;
+  color: white;
+}
+
+/* CONTACT BUTTON */
+.contact-button {
+  background-color: white;
+  /* border-style: 1pxsolid; */
+  border: 2px solid black;
+  border-radius: 15px;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  cursor: pointer;
+  margin: 35px auto auto auto;
+}
+
+.contact-button:hover {
+  box-shadow: 0 5px 16px 0 rgba(173, 173, 173, 0.24),0 17px 25px 0 rgba(173, 173, 173, 0.24);
+  transition: all 0.3s ease 0s;
+  border: 2px solid #81BB4E;
+  border-radius: 15px;
+  background-color: #81BB4E;
+  color: white;
 }
 
 /* FOOTER */
@@ -182,19 +207,3 @@ footer {
     padding: 20px;
   }
 
-  .contact-button {
-    background-color: #81BB4E;
-    border: none;
-    border-radius: 15px;
-    color: #fff;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 20px;
-    cursor: pointer;
-    margin: 35px auto auto auto;
-  }
-  
-  .contact-button:hover {
-    box-shadow: 0 5px 16px 0 rgba(0,0,0,0.24),0 17px 25px 0 rgba(0,0,0,0.19);
-  }

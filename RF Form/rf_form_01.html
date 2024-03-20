@@ -154,100 +154,6 @@
                         </div>
                 </div>
 
-                <!-- WIRELESS DEVICES -->
-                <div class="form-section" style="width:1300px;">
-                        <h3 class="form-section-title">Wireless Information</h3>
-
-                        <div class="form-item required-field">
-                                Will you be using any wireless devices? &#40;microphones / IEMs / backline / intercom / RF cam / etc.&#41;
-                        </div>
-
-                        <div class="form-question">
-                                <fieldset id="group-1">
-                                        <label class="container"><b>YES</b> &mdash; my RF equipment <b>ONLY</b>.
-                                                <input type="radio" checked="checked" name="group-1" onclick="showRFtable()">
-                                                <span class="checkmark"></span>
-                                        </label>
-                                        <label class="container"><b>YES</b> &mdash; stage provided RF equipment <b>ONLY</b>.
-                                                <input type="radio" name="group-1" onclick="hideRFtable()">
-                                                <span class="checkmark"></span>
-                                        </label>
-                                        <label class="container"><b>YES</b> &mdash; my RF equipment <b>WITH</b> stage provided RF equipment.
-                                                <input type="radio" name="group-1" onclick="showRFtable()">
-                                                <span class="checkmark"></span>
-                                        </label>
-                                        <label class="container"><b>NO</b> &mdash; we will not be using any RF equipment.
-                                                <input type="radio" name="group-1" onclick="hideRFtable()">
-                                                <span class="checkmark"></span>
-                                        </label>
-                                </fieldset>
-                        </div>
-
-                        <div class="form-subsection" id="device-info">
-                                <div class="form-text">
-                                        <p>Please specify your own wireless equipment below.</p>
-                                        <!-- <p>Click the "+" button for each additional device.</p> -->
-                                </div>
-
-                                <br>
-                                <br>
-                                <hr>
-
-                                <table name="rf-table-header" class="rf-table-header">
-                                        <thead>
-                                                <tr>
-                                                        <td style="width:24%">Type</td>
-                                                        <td style="width:14%"># of Channels</td>
-                                                        <td style="width:22%">Manufacturer</td>
-                                                        <td style="width:18%">Model</td>
-                                                        <td style="width:18%">Range</td>
-                                                </tr>
-                                        </thead>
-                                </table>
-
-                                <hr>
-
-                                <table id="rf-table" name="rf-table" style="color:black;">
-                                        <tr>
-                                                <td style="width:23%">
-                                                        <select id="device-type-1" class="device-type-1" name="Device Type" onchange="getVals()" style="width:fit-content; height:50px; margin-bottom: 8px; color:black;">
-                                                                <option value="" disabled selected>Select device type</option>
-                                                                <option value="Microphone">Microphone</option>
-                                                                <option value="IEM/IFB">IEM / IFB</option>
-                                                                <option value="Backline/Instrument">Backline / Instrument</option>
-                                                                <option value="Intercom">Intercom</option>
-                                                                <option value="Hop/Link">Hop / Link</option>
-                                                                <option value="Other">Other</option>
-                                                        </select>
-                                                </td>
-                                                <td style="width:14%">
-                                                        <input type="text" name="dev-1" onchange="getVals()" placeholder="#">
-                                                </td>
-                                                <td style="width:22%">
-                                                        <input type="text" name="dev-1" onchange="getVals()" placeholder="Manufacturer">
-                                                </td>
-                                                <td style="width:18%">
-                                                        <input type="text" name="dev-1" onchange="getVals()" placeholder="Model">
-                                                </td>
-                                                <td style="width:18%">
-                                                        <input type="text" name="dev-1" onchange="getVals()" placeholder="Range">
-                                                </td>
-                                        </tr>
-                                </table>
-
-                                <!-- CODE FOR MODULAR TABLE-->
-                                <!-- Hidden input value for testing
-                                <input name="Devices" id="hidden-dev" type="text" placeholder="Devices"/>
-
-                                <hr>
-                                <br>
-
-                                <button type="button" class="table-button" onclick="addRow(); getVals();">+</button>
-                                <button type="button" class="table-button" onclick="deleteRow(); getVals();">-</button> -->
-
-                        </div>
-                </div>
-
                 <div class="form-section" style="width:1000px">
                         <h3 class="form-section-title">Radio Information</h3>
 
@@ -329,6 +235,103 @@
                         <br>
                 
                 </div>
+
+                <!-- WIRELESS DEVICES -->
+                <div class="form-section" style="width:1300px;">
+                        <h3 class="form-section-title">Wireless Information</h3>
+
+                        <div class="form-item required-field">
+                                Will you be using any wireless devices? &#40;microphones / IEMs / backline / intercom / RF cam / etc.&#41;
+                        </div>
+
+                        <div class="form-question">
+                                <fieldset id="group-1">
+                                        <label class="container"><b>YES</b> &mdash; my RF equipment <b>ONLY</b>.
+                                                <input type="radio" checked="checked" name="group-1" onclick="showRFtable()">
+                                                <span class="checkmark"></span>
+                                        </label>
+                                        <label class="container"><b>YES</b> &mdash; stage provided RF equipment <b>ONLY</b>.
+                                                <input type="radio" name="group-1" onclick="hideRFtable()">
+                                                <span class="checkmark"></span>
+                                        </label>
+                                        <label class="container"><b>YES</b> &mdash; my RF equipment <b>WITH</b> stage provided RF equipment.
+                                                <input type="radio" name="group-1" onclick="showRFtable()">
+                                                <span class="checkmark"></span>
+                                        </label>
+                                        <label class="container"><b>NO</b> &mdash; we will not be using any RF equipment.
+                                                <input type="radio" name="group-1" onclick="hideRFtable()">
+                                                <span class="checkmark"></span>
+                                        </label>
+                                </fieldset>
+                        </div>
+
+                        
+
+                        <div class="form-subsection" id="device-info">
+                                <div class="form-text">
+                                        <p>Please specify your own wireless equipment below.</p>
+                                        <!-- <p>Click the "+" button for each additional device.</p> -->
+                                </div>
+
+                                <br>
+                                <br>
+                                <hr>
+
+                                <table name="rf-table-header" class="rf-table-header">
+                                        <thead>
+                                                <tr>
+                                                        <td style="width:24%">Type</td>
+                                                        <td style="width:14%"># of Channels</td>
+                                                        <td style="width:22%">Manufacturer</td>
+                                                        <td style="width:18%">Model</td>
+                                                        <td style="width:18%">Range</td>
+                                                </tr>
+                                        </thead>
+                                </table>
+
+                                <hr>
+
+                                <table id="rf-table" name="rf-table" style="color:black;">
+                                        <tr>
+                                                <td style="width:23%">
+                                                        <select id="device-type-1" class="device-type-1" name="Device Type" onchange="getVals()" style="width:fit-content; height:50px; margin-bottom: 8px; color:black;">
+                                                                <option value="" disabled selected>Select device type</option>
+                                                                <option value="Microphone">Microphone</option>
+                                                                <option value="IEM/IFB">IEM / IFB</option>
+                                                                <option value="Backline/Instrument">Backline / Instrument</option>
+                                                                <option value="Intercom">Intercom</option>
+                                                                <option value="Hop/Link">Hop / Link</option>
+                                                                <option value="Other">Other</option>
+                                                        </select>
+                                                </td>
+                                                <td style="width:14%">
+                                                        <input type="text" name="dev-1" onchange="getVals()" placeholder="#">
+                                                </td>
+                                                <td style="width:22%">
+                                                        <input type="text" name="dev-1" onchange="getVals()" placeholder="Manufacturer">
+                                                </td>
+                                                <td style="width:18%">
+                                                        <input type="text" name="dev-1" onchange="getVals()" placeholder="Model">
+                                                </td>
+                                                <td style="width:18%">
+                                                        <input type="text" name="dev-1" onchange="getVals()" placeholder="Range">
+                                                </td>
+                                        </tr>
+                                </table>
+
+                                <!-- CODE FOR MODULAR TABLE-->
+                                <!-- Hidden input value for testing
+                                <input name="Devices" id="hidden-dev" type="text" placeholder="Devices"/>
+
+                                <hr>
+                                <br>
+
+                                <button type="button" class="table-button" onclick="addRow(); getVals();">+</button>
+                                <button type="button" class="table-button" onclick="deleteRow(); getVals();">-</button> -->
+
+                        </div>
+                </div>
+
 
                 <div class="form-section" style="width:1000px">
                         <h3 class="form-section-title">Comments</h3>
