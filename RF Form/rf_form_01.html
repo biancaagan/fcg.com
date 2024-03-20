@@ -32,6 +32,25 @@
 
         <main>
 
+                <script>
+                        // https://stackoverflow.com/questions/70767778/html-form-submission-to-google-sheets-using-apps-scripts-landing-thank-you-pag
+                        window.addEventListener("load", function() {
+                          const form = document.getElementById('test-form');
+                          form.addEventListener("submit", function(e) {
+                            e.preventDefault();
+                            const data = new FormData(form);
+                            const action = e.target.action;
+                            fetch(action, {
+                              method: 'POST',
+                              body: data,
+                            })
+                            .then(() => {
+                            window.location.href = '/RF Form/rf_form_landing.html';
+                            })
+                          });
+                        });
+                        </script>
+
                 <form id="test-form" method="POST" action="https://script.google.com/macros/s/AKfycbwNhIQvfWCr-BPeAvnPoOtznPvqyMro9de2i9rYqnDcYbC0zIayCjUdWV1SRgHbyN0/exec">
 
                 <!-- FORM HEADER -->
