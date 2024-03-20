@@ -159,7 +159,7 @@ footer {
   font-size: 18px;
   /* padding: 10px; */
   /* margin: 45px, 25px, 10px, 25px; */
-  margin-top: 40px;
+  margin-top: 25px;
 }
 
 #copyright {
@@ -172,8 +172,8 @@ footer {
   /* border-style: dotted; */
   position: static;
   padding: 10px 10px 0px 10px;
-  margin-top: 10px;
-  margin-bottom: 25px;
+  /* margin-top: 10px; */
+  margin-bottom: 10px;
   bottom: 0;
   text-align: center;
 }
