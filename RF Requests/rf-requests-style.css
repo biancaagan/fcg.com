@@ -165,6 +165,25 @@ footer {
   color: black;
   text-decoration: none;
 }
+
+/* SOCIAL LINKS & ICONS */
+.social-links {
+  /* border-style: dotted; */
+  /* display: inline-block; */
+  position: static;
+  padding: 10px 10px 0px 10px;
+  margin-top: 25px;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.social-icon {
+  padding: 10px;
+  text-decoration: none;
+}
+
+
 /* --------------------------------------------------------- */
     
 .page-header{
