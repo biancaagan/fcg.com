@@ -40,46 +40,48 @@ function addRow() { // 24 / 14 / 22 / 18 / 18
     rowCount++;
     addNum++;
 
-    var row = table.insertRow(-1);
-    var cell1 = row.insertCell(-1);
-    var cell2 = row.insertCell(-1);
-    var cell3 = row.insertCell(-1);
-    var cell4 = row.insertCell(-1);
-    var cell5 = row.insertCell(-1);
-    cell1.style.width = "24%";
-    cell2.style.width = "14%";
-    cell3.style.width = "22%";
-    cell4.style.width = "18%";
-    cell5.style.width = "18%";
+    if (rowCount <= 8) {
+        var row = table.insertRow(-1);
+        var cell1 = row.insertCell(-1);
+        var cell2 = row.insertCell(-1);
+        var cell3 = row.insertCell(-1);
+        var cell4 = row.insertCell(-1);
+        var cell5 = row.insertCell(-1);
+        cell1.style.width = "24%";
+        cell2.style.width = "14%";
+        cell3.style.width = "22%";
+        cell4.style.width = "18%";
+        cell5.style.width = "18%";
 
-    var cell1Text = "<select class='device-type-" + addNum + "' name='dev-" + addNum + "' onchange='getVals()' style='width:fit-content; height:50px; margin-bottom: 8px; color:black;'><option value='' disabled selected>Select device type</option> <option value='mic'>Microphone</option> <option value='iem'>IEM / IFB</option> <option value='inst'>Backline / Instrument</option><option value='intercom'>Intercom</option><option value='hop'>Hop / Link</option> <option value='other'>Other</option></select>";
-    cell1.innerHTML += cell1Text
-    
-    var cell2Text = "<input type='text' name='dev-" + addNum + "' onchange='getVals()' placeholder='#'>";
-    cell2.innerHTML += cell2Text;
-    
-    var cell3Text = "<input type='text' name='dev-" + addNum + "' onchange='getVals()' placeholder='Manufacturer'>";
-    cell3.innerHTML += cell3Text;
-    
-    var cell4Text = "<input type='text' name='dev-" + addNum + "' onchange='getVals()' placeholder='Model'>";
-    cell4.innerHTML += cell4Text;
-    
-    var cell5Text = "<input type='text' name='dev-" + addNum + "' onchange='getVals()' placeholder='Range'>";
-    cell5.innerHTML += cell5Text;
+        var cell1Text = "<select class='device-type-" + addNum + "' name='dev-" + addNum + "' onchange='getVals()' style='width:fit-content; height:50px; margin-bottom: 8px; color:black;'><option value='' disabled selected>Select device type</option> <option value='mic'>Microphone</option> <option value='iem'>IEM / IFB</option> <option value='inst'>Backline / Instrument</option><option value='intercom'>Intercom</option><option value='hop'>Hop / Link</option> <option value='other'>Other</option></select>";
+        cell1.innerHTML += cell1Text
+        
+        var cell2Text = "<input type='text' name='dev-" + addNum + "' onchange='getVals()' placeholder='#'>";
+        cell2.innerHTML += cell2Text;
+        
+        var cell3Text = "<input type='text' name='dev-" + addNum + "' onchange='getVals()' placeholder='Manufacturer'>";
+        cell3.innerHTML += cell3Text;
+        
+        var cell4Text = "<input type='text' name='dev-" + addNum + "' onchange='getVals()' placeholder='Model'>";
+        cell4.innerHTML += cell4Text;
+        
+        var cell5Text = "<input type='text' name='dev-" + addNum + "' onchange='getVals()' placeholder='Range'>";
+        cell5.innerHTML += cell5Text;
 
-    // cell1.innerHTML = '<select class="device-type" name="Device Type" style="width:fit-content; height:50px; margin-bottom: 8px; color:black;">
-        // <option value="" disabled selected>Select device type</option> 
-        // <option value="mic">Microphone</option> 
-        // <option value="iem">IEM / IFB</option> 
-        // <option value="inst">Backline / Instrument</option>
-        // <option value="intercom">Intercom</option>
-        // <option value="hop">Hop / Link</option> 
-        // <option value="other">Other</option></select>';
-    
-    // cell2.innerHTML = '<input type="text" name= onchange="getVals()" placeholder="#">';
-    // cell3.innerHTML = '<input type="text" name="dev-" placeholder="Manufacturer">';
-    // cell4.innerHTML = '<input type="text" name="dev-" placeholder="Model">';
-    // cell5.innerHTML = '<input type="text" name="dev-" placeholder="Range">';
+        // cell1.innerHTML = '<select class="device-type" name="Device Type" style="width:fit-content; height:50px; margin-bottom: 8px; color:black;">
+            // <option value="" disabled selected>Select device type</option> 
+            // <option value="mic">Microphone</option> 
+            // <option value="iem">IEM / IFB</option> 
+            // <option value="inst">Backline / Instrument</option>
+            // <option value="intercom">Intercom</option>
+            // <option value="hop">Hop / Link</option> 
+            // <option value="other">Other</option></select>';
+        
+        // cell2.innerHTML = '<input type="text" name= onchange="getVals()" placeholder="#">';
+        // cell3.innerHTML = '<input type="text" name="dev-" placeholder="Manufacturer">';
+        // cell4.innerHTML = '<input type="text" name="dev-" placeholder="Model">';
+        // cell5.innerHTML = '<input type="text" name="dev-" placeholder="Range">';
+    }
 }
 
 function deleteRow() {

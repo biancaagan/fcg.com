@@ -308,6 +308,10 @@ input[type=checkbox] {
   display: none;
 }
 
+#hidden-radios {
+  display: none;
+}
+
 .device-type {
   height: 18px;
   line-height: 18px;

@@ -49,7 +49,7 @@
 
                         <div class="form-item required-field">
                                 <label>Who is this request for?</label>
-                                <input name="Band" type="text"
+                                <input name="Submitted For" type="text"
                                         placeholder="&#40;Band / Artist / Vendor / Media Outlet / etc.&#41;" required/>
                         </div>
 
@@ -154,6 +154,7 @@
                         </div>
                 </div>
 
+                <!-- RADIO INFORMATION -->
                 <div class="form-section" style="width:1000px">
                         <h3 class="form-section-title">Radio Information</h3>
 
@@ -162,13 +163,13 @@
                         </div>
 
                         <div class="form-question">
-                                <fieldset id="group-2">
+                                <fieldset id="group-2" name="Carrying 2-Way Radios?">
                                         <label class="container"><b>YES</b>
-                                                <input type="radio" checked="checked" name="group-2" onclick="showInfo();">
+                                                <input type="radio" checked="checked" name="Carrying 2-Way Radios?" value="YES" onclick="showInfo();">
                                                 <span class="checkmark"></span>
                                         </label>
                                         <label class="container"><b>NO</b>
-                                                <input type="radio" name="group-2" onclick="hideInfo();">
+                                                <input type="radio" name="Carrying 2-Way Radios?" value="NO" onclick="hideInfo();">
                                                 <span class="checkmark"></span>
                                         </label>
                                 </fieldset>
@@ -222,12 +223,18 @@
                                         <!-- Code for file upload option -->
                                         <!-- <label for="radio-files">Select file(s):</label>
                                         <input type="file" id="radio-files" name="radio-files" multiple><br><br> -->
-
                                         <!-- <br> -->
-                                        <textarea id="radio-list" name="radio-list" rows="4" cols="50" placeholder="List ALL channel #s and their frequencies..."></textarea>
 
-                                        <!-- <input type="text" class="radio-list" placeholder="List ALL channel #s and their frequencies..."> -->
+                                        <textarea id="radio-list" name="radio-list" rows="4" cols="50" onchange="updateRadioFreqs()" placeholder="List ALL channel #s and their frequencies..."></textarea>
+                                        
+                                        <!-- Hidden input value for radio frequencies -->
+                                        <input name="Radio Frequencies" id="hidden-radios" type="text" placeholder="Selected Locations"/>
 
+                                        <script>
+                                                function updateRadioFreqs(){
+                                                        document.getElementById('hidden-radios').value = document.getElementById("radio-list").value;
+                                                }
+                                        </script>
                                 </div> 
 
                         </div>
@@ -245,28 +252,28 @@
                         </div>
 
                         <div class="form-question">
-                                <fieldset id="group-1">
+                                <fieldset id="group-1" name="Use of Wireless Devices">
                                         <label class="container"><b>YES</b> &mdash; my RF equipment <b>ONLY</b>.
-                                                <input type="radio" checked="checked" name="group-1" onclick="showRFtable()">
+                                                <input type="radio" checked="checked" name="Use of Wireless Devices" value="YES, my RF equipment ONLY" onclick="showRFtable()">
                                                 <span class="checkmark"></span>
                                         </label>
                                         <label class="container"><b>YES</b> &mdash; stage provided RF equipment <b>ONLY</b>.
-                                                <input type="radio" name="group-1" onclick="hideRFtable()">
+                                                <input type="radio" name="Use of Wireless Devices" value="YES, stage provided RF equipment ONLY" onclick="hideRFtable()">
                                                 <span class="checkmark"></span>
                                         </label>
                                         <label class="container"><b>YES</b> &mdash; my RF equipment <b>WITH</b> stage provided RF equipment.
-                                                <input type="radio" name="group-1" onclick="showRFtable()">
+                                                <input type="radio" name="Use of Wireless Devices" value="YES, my RF equipment WITH stage provided RF equipment" onclick="showRFtable()">
                                                 <span class="checkmark"></span>
                                         </label>
                                         <label class="container"><b>NO</b> &mdash; we will not be using any RF equipment.
-                                                <input type="radio" name="group-1" onclick="hideRFtable()">
+                                                <input type="radio" name="Use of Wireless Devices" value="NO, we will not be using any RF equipment" onclick="hideRFtable()">
                                                 <span class="checkmark"></span>
                                         </label>
                                 </fieldset>
                         </div>
 
                         
-                        <!--  SHOW / HIDE THIS -->
+                        <!--  SHOW / HIDE THIS SECTION -->
                         <div id="device-info" class="form-subsection">
                                 <div class="form-text">
                                         <p>Please specify your own wireless equipment below.</p>
@@ -291,10 +298,12 @@
 
                                 <hr>
 
+
                                 <table id="rf-table" name="rf-table" style="color:black;">
+                                        <!-- DEVICE 1 -->
                                         <tr>
                                                 <td style="width:23%">
-                                                        <select id="device-type-1" class="device-type-1" name="Device Type" onchange="getVals()" style="width:fit-content; height:50px; margin-bottom: 8px; color:black;">
+                                                        <select id="device-type-1" class="device-type-1" name="Device 1 Type" onchange="getVals()" style="width:fit-content; height:50px; margin-bottom: 8px; color:black;">
                                                                 <option value="" disabled selected>Select device type</option>
                                                                 <option value="Microphone">Microphone</option>
                                                                 <option value="IEM/IFB">IEM / IFB</option>
@@ -317,17 +326,18 @@
                                                         <input type="text" name="dev-1" onchange="getVals()" placeholder="Range">
                                                 </td>
                                         </tr>
+
                                 </table>
 
                                 <!-- CODE FOR MODULAR TABLE-->
-                                <!-- Hidden input value for testing
-                                <input name="Devices" id="hidden-dev" type="text" placeholder="Devices"/>
+                                <!-- Hidden input value for testing -->
+                                <!-- <input name="Devices" id="hidden-dev" type="text" placeholder="Devices"/> -->
 
                                 <hr>
                                 <br>
 
                                 <button type="button" class="table-button" onclick="addRow(); getVals();">+</button>
-                                <button type="button" class="table-button" onclick="deleteRow(); getVals();">-</button> -->
+                                <button type="button" class="table-button" onclick="deleteRow(); getVals();">-</button>
 
                         </div>
                 </div>
