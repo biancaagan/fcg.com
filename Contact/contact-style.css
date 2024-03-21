@@ -269,7 +269,7 @@ input[type=submit]:hover {
   background-color: #f2f2f2;
   padding: 20px;
   font-family: Futura-Book;
-  font-size: 24px;
+  /* font-size: 24px; */
 }
 
 form {
@@ -278,4 +278,10 @@ form {
 
 label {
   background-color: #f2f2f2;
+}
+
+#contact-email {
+  background-color: #f2f2f2;
+  font-family: Futura-Book;
+  font-size: 24px;
 }
